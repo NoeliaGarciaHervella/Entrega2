@@ -1,0 +1,332 @@
+/*
+Noelia García Hervella
+Inés Prieto González
+Pablo Gallero Portela
+*/
+
+/*------------------ ETIQUETAS GENERALES ------------------*/
+
+html, body{
+  height: 100%;
+  font-family: Poppins;
+}
+
+.toCenter{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.signinbody{
+  /*background-color: #f2f2f2;*/
+  background-image: url('../img/fondo.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+
+form{
+	padding-bottom: 2%;
+	padding-top: 2%;
+	background-color: white;
+}
+
+i{
+  color: #999999;
+}
+
+/*------------------ Formulario REGISTRAR USUARIO ------------------*/
+
+/*------------------ Parte superior del formulario ------------------*/
+
+/*Registrar usuario*/
+.h3SingUp{
+  text-align: center;
+}
+
+/*Icono carpeta */
+.spanFolderIcon{
+  font-size: 3em;
+  text-align: center;
+}
+
+.folderIcon{
+  color: black;
+}
+
+/*------------------ Parte media del formulario ------------------*/
+
+.spanIcon{
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0px;
+}
+
+
+.inputIcon{
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0px;
+}
+
+.inputIcon:focus{
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0px;
+}
+
+/*------------------ Parte inferior del formulario ------------------*/
+
+
+/*Enlace a la vista de login*/
+.redirectSingIn{
+	text-align: center;
+}
+
+
+
+/*Boton violeta difuminado*/
+
+.container-login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.wrap-login100-form-btn {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: -o-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: -moz-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+
+
+/* MENU LATERAL */
+
+#body-row {
+  margin-left:0;
+  margin-right:0;
+}
+#sidebar-container {
+  min-height: 100vh;   
+  background-color: #333;
+  padding: 0;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+  width: 230px;
+}
+.sidebar-collapsed {
+  width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+  height: 50px;
+  color: white;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+  height: 45px;
+  padding-left: 30px;
+}
+.sidebar-submenu {
+  font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+  background-color: #333;
+  height: 35px;
+}
+.sidebar-separator {
+  background-color: #333;
+  height: 25px;
+}
+.logo-separator {
+  background-color: #333;    
+  height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+content: " \f0d7";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+content: " \f0da";
+font-family: FontAwesome;
+display: inline;
+text-align: right;
+padding-left: 10px;
+}
+
+
+/* LOGOTIPO NAVBAR*/
+
+.logotipo{
+  font-size: 2rem;
+}
+
+/* MENU DESPLEGABLE DE CADA CARPETA*/
+.fold{
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
+
+.titulo{
+  text-align: center;
+  padding: none;
+}
+.card-body{
+  padding: none;
+}
+
+.card{
+  border: none;
+}
+
+.opcionescarpeta{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 10px;
+  background-color: #343a40;
+  display:none;
+  position: absolute;
+  z-index: 100;
+}
+
+.opcionesfichero{
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 10px;
+  background-color: #343a40;
+  display:none;
+  position: absolute;
+  z-index: 100;
+}
+
+
+.menu_simple ul {
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  width:185px;
+  list-style-type: none;
+}
+  
+
+.menu_simple ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10.5px 11px;
+  border-radius: 10px;
+  display:block;    
+}
+  
+   
+  
+.menu_simple ul li a:visited {
+  color: white;  
+  border-radius: 10px;
+}
+  
+   
+  
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+  color: white;
+  background-color: #1d2124;
+  border-radius: 10px;
+}
+
+
+.cuerpoModal{
+  text-align: center;
+}
+
+.inputModal{
+  border: none;
+  border-bottom: 1px solid #1d2124;
+  text-align: center;
+}
+
+.inputModal:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #1d2124;
+  border-radius: 0px;
+}
